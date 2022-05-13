@@ -1,10 +1,21 @@
-import React from 'react';
-import { Container, Title, Turn, Image, Score, Play, LeagueLogo } from './styles';
-import { MATCH } from '../../utils/match';
+import React from "react";
+import {
+  Container,
+  Title,
+  Turn,
+  Image,
+  Score,
+  Play,
+  LeagueLogo,
+} from "./styles";
+import { MATCH } from "../../utils/match";
 
 export function MatchNow() {
   return (
-    <Container>
+    <Container
+      accessible
+      accessibilityLabel={`Neste momento, estão jogando ${MATCH.host_name} contra  ${MATCH.visitor_name}. O placar agora é ${MATCH.score}. `}
+    >
       <Title>{MATCH.league}</Title>
       <Turn>{MATCH.turn}</Turn>
 
@@ -15,6 +26,6 @@ export function MatchNow() {
       </Play>
 
       <LeagueLogo source={MATCH.league_logo} />
-    </Container >
+    </Container>
   );
 }

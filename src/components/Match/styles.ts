@@ -1,8 +1,8 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
-export const Container = styled.TouchableOpacity`  
+export const Container = styled.TouchableOpacity`
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   flex-direction: row;
   align-items: center;
   padding: 18px 28px;
@@ -34,7 +34,7 @@ export const Time = styled.View`
 
 export const Hour = styled.Text`
   font-weight: bold;
-  color: #F67E55;
+  color: #f67e55;
   font-size: 17px;
 `;
 
@@ -42,4 +42,3 @@ export const Day = styled.Text`
   color: #999;
   font-size: 12px;
 `;
-
